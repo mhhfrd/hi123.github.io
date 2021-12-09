@@ -1,0 +1,92 @@
+:root {
+    --color-blue: #035278;
+    --color-red: #e41212;
+    --color-white: #FFF;
+}
+
+
+
+
+body{
+    height: 50%;
+    background-color: var(--color-blue);
+    width: 50px;
+}
+
+
+
+
+.block{
+    padding: 300px;
+    max-width: 1170px;
+    margin: 100px center;
+    margin: 0px 0px 30px 0px;
+
+    width: 150px;
+    height: 150px;
+   
+    border: 13px solid var(--color-white);
+    border-radius: 70%;
+    background-color: var(--color-white);
+    position: relative;
+    overflow: hidden;
+    margin: 450px;
+}
+
+
+
+
+.square{
+    width: 150px;
+    height: 150px;
+   
+    border: 12px solid var(--color-blue);
+    border-radius: 100%;
+    background-color: var(--color-blue);
+    position: relative;
+    overflow: hidden;
+    margin: 1px;
+}
+.square::before {
+    display: block;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 80%;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.square::after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+
+.hp {
+    width: 100px;
+    height: 100px;
+    background: var(--color-red);
+    margin: 50px;
+}
+.ee {
+     width: 150px;
+    height: 150px;
+   
+    border: 12px solid var(--color-blue);
+    border-radius: 100%;
+    background-color: var(--color-blue);
+    position: relative;
+    overflow: hidden;
+    margin: 50px;
+}
